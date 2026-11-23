@@ -1,0 +1,16 @@
+{
+  "name": "bacolor-civil-id",
+  "version": "1.0.0",
+  "description": "Bacolor Civil ID portal: resident website, admin dashboard and backend API.",
+  "main": "server/index.js",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test --test-concurrency=1 tests/api.test.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  }
+}
